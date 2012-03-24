@@ -192,6 +192,9 @@
 	},
 	"file_history":
 	[
+		"/home/exchgr/Projects/code/Web Sites/TagTube/header.html",
+		"/etc/apache2/sites-enabled/000-default",
+		"/etc/apache2/apache2.conf",
 		"/home/exchgr/Projects/code/Web Sites/Really-Readable-Syndication/include/bootstrap/css/bootstrap-responsive.css",
 		"/home/exchgr/Projects/code/Web Sites/TagTube/index.php",
 		"/home/exchgr/Projects/code/Web Sites/GarageSlam/htdocs/header.php",
@@ -316,10 +319,7 @@
 		"/C/Users/Dan Mundy/Web Sites/cache/courses/course.php",
 		"/C/Users/Dan Mundy/Web Sites/cache/courses/index.php",
 		"/C/Users/Dan Mundy/Web Sites/cache/index.php",
-		"/C/Users/Dan Mundy/Web Sites/cache/header.php",
-		"//SHOEBOX/www/include/main.js",
-		"//SHOEBOX/www/style.css",
-		"//SHOEBOX/www/footer.php"
+		"/C/Users/Dan Mundy/Web Sites/cache/header.php"
 	],
 	"find":
 	{
@@ -337,6 +337,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"www",
+			"document",
+			"root",
 			"Really Readable Syndication",
 			"width",
 			",",
@@ -461,10 +464,7 @@
 			"genre",
 			"Genre",
 			"addGenre",
-			"genres",
-			"genre",
-			"genres",
-			"influence"
+			"genres"
 		],
 		"highlight": true,
 		"in_selection": false,
