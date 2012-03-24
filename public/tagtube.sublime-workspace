@@ -1,0 +1,552 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"h",
+				"head	Tag"
+			],
+			[
+				"margin",
+				"margin	margin: all"
+			],
+			[
+				"meta",
+				"metabox"
+			],
+			[
+				"letter",
+				"letter-spacing"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"p",
+				"pathname"
+			],
+			[
+				"std",
+				"stdout"
+			],
+			[
+				"g",
+				"getTime"
+			],
+			[
+				"s",
+				"startTime"
+			],
+			[
+				"req",
+				"requestHandler"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"login",
+				"loginStart"
+			],
+			[
+				"backgr",
+				"background	background-color: hex"
+			],
+			[
+				"sou",
+				"soundcloud"
+			],
+			[
+				"fn",
+				"fname"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"prof",
+				"profileUserLoaded"
+			],
+			[
+				"inst",
+				"instruments"
+			],
+			[
+				"searc",
+				"search-results"
+			],
+			[
+				"search",
+				"search-button"
+			],
+			[
+				"profile",
+				"profileUser"
+			],
+			[
+				"curr",
+				"currentUserLoaded"
+			],
+			[
+				"my",
+				"mySQLConnection"
+			],
+			[
+				"addi",
+				"addInfluenceInput"
+			],
+			[
+				"add",
+				"addInfluence"
+			],
+			[
+				"vertica",
+				"vertical-align"
+			],
+			[
+				"user",
+				"userID"
+			],
+			[
+				"auth",
+				"authResponse"
+			],
+			[
+				"data",
+				"dataType"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"r",
+				"response"
+			],
+			[
+				"vertic",
+				"vertical-align"
+			],
+			[
+				"fb",
+				"fb-login-button"
+			],
+			[
+				"bl",
+				"block-half"
+			],
+			[
+				"verti",
+				"vertical-align"
+			],
+			[
+				"font-fa",
+				"font-face"
+			],
+			[
+				"font-f",
+				"font-family"
+			],
+			[
+				"font-",
+				"font-family"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/exchgr/Projects/code/Web Sites/TagTube/header.html",
+		"/etc/apache2/sites-enabled/000-default",
+		"/etc/apache2/apache2.conf",
+		"/home/exchgr/Projects/code/Web Sites/Really-Readable-Syndication/include/bootstrap/css/bootstrap-responsive.css",
+		"/home/exchgr/Projects/code/Web Sites/TagTube/index.php",
+		"/home/exchgr/Projects/code/Web Sites/GarageSlam/htdocs/header.php",
+		"/home/exchgr/Projects/code/Web Sites/GarageSlam/htdocs-old/profile.php",
+		"/home/exchgr/Projects/code/Web Sites/GarageSlam/htdocs-old/header.php",
+		"/home/exchgr/Projects/code/Web Sites/GarageSlam/htdocs-old/project.php",
+		"/home/exchgr/Projects/code/Web Sites/GarageSlam/htdocs-old/index.php",
+		"/home/exchgr/Projects/code/Web Sites/Tumblr/old-theme.html",
+		"/home/exchgr/Projects/code/Web Sites/Tumblr/resume.mdown",
+		"/home/exchgr/Downloads/Fonts/25 New Free High-Quality Fonts/crimson_text_100831/README",
+		"/usr/share/applications/virtualbox.desktop",
+		"/usr/share/applications/chromium-browser.desktop",
+		"/home/exchgr/Programs/totem-plugin-airplay/README",
+		"/home/exchgr/Programs/totem-plugin-airplay/airplay.totem-plugin",
+		"/home/exchgr/Desktop/blah.html",
+		"/home/exchgr/Desktop/opensms.html",
+		"/home/exchgr/Downloads/setup.log.full",
+		"/home/exchgr/.config/chromium/Default/Extensions/ojmmnceaidnmminjjffpndcbdibelgam/1.1_0/css/scroll-bars.css",
+		"/usr/share/themes/Zukini/gtk-3.0/gtk.css",
+		"/home/exchgr/.config/chromium/Default/Extensions/ojmmnceaidnmminjjffpndcbdibelgam/1.1_0/css/options.css",
+		"/home/exchgr/scripts/cron-pulse-loop.sh",
+		"/home/exchgr/Projects/code/Web Sites/Tumblr/portfolio.mdown",
+		"/home/exchgr/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/usr/share/themes/Radiance/metacity-1/metacity-theme-1.xml",
+		"/usr/share/themes/Zukini/metacity-1/metacity-theme-1.xml",
+		"/home/exchgr/.cache/.fr-M4Reu4/Cobra Vista/metacity-1/metacity-theme-1.xml",
+		"/home/exchgr/.xchat2-/xchat.conf",
+		"/home/exchgr/.xchat2-/commands.conf",
+		"/home/exchgr/Web Sites/ink/index.php",
+		"/home/exchgr/.local/share/applications/nautilus-home.desktop",
+		"/etc/lightdm/unity-greeter.conf",
+		"/etc/lightdm/lightdm.conf",
+		"/home/exchgr/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/media/2E8CF5CD8CF58F97/Users/Dan Mundy/.recently-used.xbel",
+		"/home/exchgr/.local/share/applications/ubuntu-software-center.desktop",
+		"/home/exchgr/pulse-loop.sh",
+		"/home/exchgr/Desktop/UbuntuCodeofConduct-1.1.txt.asc",
+		"/home/exchgr/.gnupg/gpg.conf",
+		"/tmp/UbuntuCodeofConduct-1.1.txt",
+		"/home/exchgr/.xchat2-/servlist_.conf",
+		"/home/exchgr/.xchat2/servlist_.conf",
+		"/home/exchgr/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/exchgr/Web Sites/Tumblr/parensthetixchgr.sublime-project",
+		"/media/2E8CF5CD8CF58F97/Users/Dan Mundy/Web Sites/Tumblr/index.html",
+		"/media/2E8CF5CD8CF58F97/Users/Dan Mundy/Web Sites/Tumblr/old-theme.html",
+		"/C/Users/Dan Mundy/Desktop/blah",
+		"/C/xampp/htdocs/style.less",
+		"/C/Users/Dan Mundy/Web Sites/Tumblr/domainhash.js",
+		"/C/Users/Dan Mundy/Web Sites/test.html",
+		"/E/Videos/TV/The IT Crowd Season 1-4/The IT Crowd Season 1/The.IT.Crowd.S01.WS.PDTV.nfo",
+		"/C/Users/Dan Mundy/AppData/Local/Temp/Temp1_webfontkit-20120205-162851.zip/stylesheet.css",
+		"/C/Users/Dan Mundy/Web Sites/Tumblr/PerfectFluidWidthLayout/style.css",
+		"/C/Users/Dan Mundy/Web Sites/Tumblr/style.less",
+		"/C/xampp/htdocs/header.php",
+		"/C/Users/Dan Mundy/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Dan Mundy/AppData/Roaming/Sublime Text 2/Packages/Default/Global.sublime-settings",
+		"/C/Users/Dan Mundy/Web Sites/VenRock/helloworld.js",
+		"/C/xampp/htdocs/include/easySlider1.7.js",
+		"/C/xampp/htdocs/about.php",
+		"/C/xampp/htdocs-old/footer.php",
+		"/C/xampp/htdocs/index.php",
+		"/C/xampp/htdocs-old/header.php",
+		"/C/xampp/htdocs-old/style.css",
+		"/C/xampp/htdocs/include/less-1.2.0.min.js",
+		"/C/xampp/htdocs/style.less.css",
+		"/C/xampp/htdocs-old/index.php",
+		"/C/xampp/htdocs-old/fonts/FreeSans.css",
+		"/C/xampp/htdocs/footer.php",
+		"/C/xampp/htdocs/project.php",
+		"/C/xampp/htdocs/search.php",
+		"/C/xampp/htdocs/api/search.php",
+		"/C/xampp/htdocs/api/setUser.php",
+		"/C/xampp/htdocs/profile.php",
+		"/C/xampp/htdocs/style.css",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/xampp/htdocs/api/getUser.php",
+		"/C/Users/Dan Mundy/Web Sites/classer/style.css",
+		"/C/Users/Dan Mundy/Web Sites/classer/header.php",
+		"/C/xampp/htdocs/api/setInstrument.php",
+		"/C/xampp/htdocs/api/setGenre.php",
+		"/C/xampp/htdocs/api/setInfluence.php",
+		"/C/xampp/htdocs/ajax/influence/set.php",
+		"/C/xampp/htdocs/include/autocomplete.js",
+		"/C/Users/Dan Mundy/Web Sites/classer/courses/course.php",
+		"/C/Users/Dan Mundy/.gitignore_global",
+		"/C/xampp/htdocs/include/jquery-1.7.1.min.js",
+		"/C/xampp/htdocs/include/soundcloud/README",
+		"/C/Users/Dan Mundy/Web Sites/www/wp-content/themes/blitmag/style.css",
+		"/C/Users/Dan Mundy/Web Sites/www/wp-content/themes/blitmag/comments.php",
+		"/C/xampp/htdocs/fonts/FreeSans.css",
+		"/C/Users/Dan Mundy/Web Sites/classer/index.php",
+		"/C/Users/Dan Mundy/Web Sites/classer/include/main.js",
+		"/C/Users/Dan Mundy/Web Sites/classer/footer.php",
+		"/C/Users/Dan Mundy/Web Sites/classer/api/login/validate.php",
+		"/C/Users/Dan Mundy/Web Sites/classer/api/login.php",
+		"/C/Users/Dan Mundy/Web Sites/classer/api/get/course.php",
+		"/C/Users/Dan Mundy/Web Sites/current/wp-content/themes/thisweeksmodel/header.php",
+		"/C/Users/Dan Mundy/Web Sites/current/wp-content/themes/thisweeksmodel/style.css",
+		"/C/Users/Dan Mundy/Web Sites/designco/wp-content/themes/awesome/header.php",
+		"/C/Users/Dan Mundy/Web Sites/designco/wp-content/themes/awesome/style.css",
+		"/C/Users/Dan Mundy/Web Sites/designco/wp-content/themes/awesome/index.php",
+		"/C/Users/Dan Mundy/Web Sites/classer/sql planning.txt",
+		"/C/Users/Dan Mundy/Web Sites/swingtime_oldphpconcept/functions.php",
+		"/C/Users/Dan Mundy/Web Sites/swingtime_first-api-attempt/api/sections/save.php",
+		"/C/Users/Dan Mundy/Web Sites/swingtime_first-api-attempt/engine/page.php",
+		"/C/Users/Dan Mundy/AppData/Local/Temp/7zODCA0.tmp/firebug.css",
+		"/C/Users/Dan Mundy/AppData/Local/Temp/7zOA919.tmp/useragentswitcher.css",
+		"/C/Users/Dan Mundy/AppData/Local/Temp/7zOCF1A.tmp/foobar-autocomplete.js",
+		"/C/Users/Dan Mundy/AppData/Local/Temp/7zOCA95.tmp/json_sans_eval.js",
+		"/C/Users/Dan Mundy/Web Sites/swingtime_/functions.php",
+		"/C/Users/Dan Mundy/Web Sites/swingtime_/ajaxCalls.php",
+		"/C/Users/Dan Mundy/Web Sites/swingtime_first-api-attempt/engine/menu.php",
+		"/C/Users/Dan Mundy/Web Sites/swingtime_first-api-attempt/api/sections/get.php",
+		"/C/Users/Dan Mundy/Web Sites/www/wp-content/themes/blitmag/includes/easySlider1.7.js",
+		"//SHOEBOX/h-drmmundy/www-slamwhale/functions.js",
+		"//SHOEBOX/h-drmmundy/www-slamwhale/index.php",
+		"//SHOEBOX/h-drmmundy/www-slamwhale/style.css",
+		"//SHOEBOX/www/courses/index.php",
+		"/C/Users/Dan Mundy/Web Sites/cache/include/main.js",
+		"/C/Users/Dan Mundy/Web Sites/cache/style.css",
+		"/C/Users/Dan Mundy/Web Sites/cache/footer.php",
+		"/C/Users/Dan Mundy/Web Sites/cache/courses/course.php",
+		"/C/Users/Dan Mundy/Web Sites/cache/courses/index.php",
+		"/C/Users/Dan Mundy/Web Sites/cache/index.php",
+		"/C/Users/Dan Mundy/Web Sites/cache/header.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"www",
+			"document",
+			"root",
+			"Really Readable Syndication",
+			"width",
+			",",
+			" ",
+			" --memory-model=low --purge-memory-button",
+			"memory-model",
+			":",
+			"   ",
+			"img",
+			"font-family: \"Helvetica\", \"Helvetica Neue\", \"FreeSans\", \"Arial\", sans-serif;",
+			"Helvetica",
+			"font-family: \"Helvetica\", \"Helvetica Neue\", \"FreeSans\", \"Arial\", sans-serif;",
+			"h1",
+			"666",
+			"justify",
+			"_",
+			"  ",
+			"span",
+			"<span style=\"font-weight: bold\">",
+			"Pictures",
+			"Videos",
+			"Documents",
+			"right",
+			"test_value",
+			"”",
+			"letter-spacing",
+			"#0066FF",
+			"0066FF",
+			"0066ff",
+			"220px port",
+			"\n\n",
+			"\n",
+			"h3",
+			"div",
+			"{block:Title}\n								<h2>",
+			"\n<p>",
+			"&#13;",
+			"</p>",
+			"{/block:RebloggedFrom}",
+			"disqu",
+			"span",
+			"p class=\"right",
+			"#dddddd",
+			"#333333",
+			"{block:RebloggedFromReblog}(source: <a href=\"{ReblogRootURL}\">{ReblogRootName}</a>){/block:RebloggedFromReblog}",
+			"</a>{ReblogRootURL}",
+			"permalink",
+			"audio",
+			"{block:Title}",
+			"<a href=\"{Permalink}\">{Month}",
+			"<a href=\"{Permalink}\">",
+			"ul.tags li",
+			"\n								<hr />",
+			"{CapitalAmPm}",
+			"{Month}",
+			"										{",
+			"{/block:RebloggedFrom}",
+			"RebloggedFrom}",
+			"span",
+			"reblog",
+			"PostNotes",
+			"letter-spacing: -1px;",
+			"				",
+			"letter-spacing: -1px;",
+			"/li",
+			"li ",
+			"li",
+			"textpostbody",
+			"ul ",
+			"\"Helvetica\", \"Helvetica Neue\", \"",
+			".content",
+			".card",
+			"    ",
+			"\n",
+			"images",
+			"<br />",
+			"FreeSans",
+			"freesans",
+			"-image",
+			",",
+			"login",
+			"inline",
+			"remember",
+			"password",
+			"\\",
+			"\" +",
+			" \" +",
+			"\"",
+			"slider",
+			"block-third",
+			"block",
+			"button",
+			"toggle",
+			";",
+			"	<li>",
+			"inline",
+			"string",
+			".text",
+			"text",
+			"table",
+			"person",
+			"genres",
+			"rawurldecode(",
+			"json",
+			"login",
+			"button",
+			"rawurldecode",
+			")",
+			"head",
+			"small",
+			"filters",
+			" style=\"margin-top: 30px;\"",
+			"margin-top",
+			"genre",
+			"Genre",
+			"a instrument",
+			"genre",
+			"profileUser",
+			"genre",
+			"grey",
+			"a instrument",
+			"genre",
+			"Genre",
+			"addGenre",
+			"genres"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"style",
+				"/C/xampp/htdocs/style.less"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
