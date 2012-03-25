@@ -1,11 +1,9 @@
 /* requires */
-<<<<<<< HEAD
 var Url = require('url');
 var http = require('http');
 var xml2js = require('xml2js');
 var ent = require('ent');
 var querystring = require('querystring');
-var app = require('express');
 
 /* parser */
 var parser = new xml2js.Parser();
@@ -23,11 +21,12 @@ module.exports = {
 		},
 
 	/* given youTube v query variable, renders video view */
-	viewVideo :
+	videoView :
 		function(req, res) {
 			var options = {
-				videoPath : videoPath
+				videoPath : req.params.videoPath
 			};
+			console.log(options);
 			res.render('video.ejs', options);
 		},
 	
