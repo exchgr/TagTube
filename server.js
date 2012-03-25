@@ -21,6 +21,8 @@ app.get('/favicon.ico', function(req, res){
 	return null;
 });
 
+app.get('/parseVideoPath', routes.parseVideoPath);
+
 app.get('/parseUrl', routes.parseUrl);
 
 app.get('/getCaptions', routes.getCaptions);

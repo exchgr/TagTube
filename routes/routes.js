@@ -12,6 +12,12 @@ var parser = new xml2js.Parser();
 /* export request handlers */
 module.exports = {
 
+	/* takes url returns video path */
+	parseVideoPath :
+		function(req, res){
+			var videoPath = Url.parse(req.query.url, true).query.v
+			res.send({videoPath : videoPath});
+		},
 
 	/* given youTube url query, redirects video view */
 	parseUrl :
