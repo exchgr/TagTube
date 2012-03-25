@@ -17,9 +17,18 @@ app.configure(function(){
 });
 
 /* CRUD */
+app.get('/favicon.ico', function(req, res){
+	return null;
+});
+
 app.get('/parseUrl', routes.parseUrl);
+
+app.get('/getCaptions', routes.getCaptions);
+
 app.get('/:videoPath', routes.videoView);
-//app.get('/store', routes.store);
+
+app.get('/', routes.indexView);
+
 
 /* start 'er up */
 app.listen(port);
