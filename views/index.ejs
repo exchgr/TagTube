@@ -1,5 +1,36 @@
 <%- partial('header.ejs') %>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('form#videoForm').submit(function() {
+			$('.container#body').fadeOut(500, function() {
+				$(this).html('<div class="row"><div class="loading"><div class="innerPadding"><h2>&nbsp;</h2></div></div></div>');
+				$(this).fadeIn(500);
+			});
+			return false;
+		});
+		$('a.btn').click(function() {
+			$('form#videoForm').submit();
+			return false;
+		});
+	});
+</script>
 <div class="container" id="body">
-	
+	<div class="row">
+		<div class="span6 offset3 enter">
+			<div class="innerPadding">
+				<form id="videoForm">
+					<h3>Paste a YouTube video, and I'll tell you more about it.</h3><input type="text" name="videoURL" id="videoURL" /><br />
+					<a class="btn" id="submit" href="#">Watch &amp; Learn</a>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span6 offset3">
+			<p style="color: #333;">
+				TopicTube takes a YouTube video, reads the closed captions, and generates a tag cloud of topics discussed in the video. You can click on topics in the tag cloud to get more detailed information about them. TopicTube helps you get more engaged with the videos you watch, and it helps you become more informed.
+			</p>
+		</div>
+	</div>
 </div>
 <%- partial('footer.ejs') %>
