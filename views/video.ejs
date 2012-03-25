@@ -24,11 +24,11 @@
 						infobox += data.Abstract + '</p>';
 					} else if (data.Type == 'D') { // Disambiguation
 						infobox += '<a href="' + data.AbstractURL + '">'+ '<h2>' + data.Heading + '</h2></a>';
-						var RelatedTopic = {};
-						for (RelatedTopic in data.RelatedTopics) {
-							if (typeof(data.RelatedTopics[RelatedTopic].Result) !== 'undefined') {
-								infobox += '<p>' + data.RelatedTopics[RelatedTopic].Result + '</p>';
-							}
+						var i;
+						for (i in data.RelatedTopics) {
+							if (typeof(data.RelatedTopics[i].Result) !== 'undefined') {
+								infobox += '<p>' + data.RelatedTopics[i].Result + '</p>';
+							} else if (typeof(data.RelatedTopics[i].Topics) !== 'undefined')
 						}
 					} else if (data.Type == 'C') { // Category
 
