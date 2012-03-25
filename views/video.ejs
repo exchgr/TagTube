@@ -5,7 +5,8 @@
 	
 	function drawCloud(startColor, endColor, startSize, endSize){
 		var captions = JSON.parse(localStorage.captions);	
-		
+		console.log(typeof(captions));
+		console.log(captions);
 		var seconds = 0;
 		var lineNum = 0;
 		var tag_index = 0;
@@ -20,7 +21,7 @@
 				for(var i in s_arr){
 					var important = false;
 					if(s_arr[i].search("<TOPIC>"){
-						imortant=true;
+						important=true;
 						s_arr[i] = s_arr[i].substr(7);
 						s_arr[i] = (s_arr[i].split("</"))[0];
 					}
