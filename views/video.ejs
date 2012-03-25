@@ -19,8 +19,9 @@
 				s = captions.text[lineNum]['#'];
 				s_arr = s.split(' ');
 				for(var i in s_arr){
+					s_arr[i] += ' ';
 					var important = false;
-					if(s_arr[i].search("<TOPIC>"){
+					if(s_arr[i].search("<TOPIC>") >= 0){
 						important=true;
 						s_arr[i] = s_arr[i].substr(7);
 						s_arr[i] = (s_arr[i].split("</"))[0];
