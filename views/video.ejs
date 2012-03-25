@@ -1,9 +1,60 @@
 <%- partial('header.ejs') %>
+<script type="text/javascript" src="/include/jquery.tagcloud.js"></script>
 <script type="text/javascript">
+
+	/* this is dummy data for now */
+	var captions = {"text":[{"#":"The President:\nHello, Buckeyes!","@":{"start":"0.533","dur":"1.733"}},{"#":"(applause)","@":{"start":"2.266","dur":"4.334"}},{"#":"Yes. It is good to be back at\nThe Ohio State University.","@":{"start":"6.6","dur":"6.033"}},{"#":"(applause)","@":{"start":"12.633","dur":"5.734"}},{"#":"I want to thank --","@":{"start":"18.367","dur":"0.633"}},{"#":"Audience Member:\nI love you!","@":{"start":"19","dur":"0.667"}},{"#":"The President:\nI love you back.","@":{"start":"19.667","dur":"0.966"}},{"#":"(applause)","@":{"start":"20.633","dur":"2.734"}},{"#":"I am thrilled to be here.","@":{"start":"23.367","dur":"1.066"}},{"#":"I want to thank a\ncouple of people.","@":{"start":"24.433","dur":"1.7"}},{"#":"First of all, the outstanding\nMayor of Columbus,","@":{"start":"26.133","dur":"3.234"}},{"#":"Michael Coleman, is here.","@":{"start":"29.367","dur":"1.333"}},{"#":"(applause)","@":{"start":"30.7","dur":"3.733"}}]};
+	
+	function drawCloud(startColor, endColor, startSize, endSize){
+		var seconds = 0;
+		var lineNum = 0;
+		var tag_index = 0;
+		var tag_arr = [];
+		var freq_arr = [];
+		var most_freq_count = 1;
+		var timer = setInterval(function(){
+			seconds += 1;
+			if(Math.floor(parseFloat(captions.text[lineNum]['@']['start'])) <= seconds){
+				s = captions.text[lineNum]['#'];
+				s_arr = s.split(' ');
+				for(var i in s_arr){
+					var contained = false;
+					for(var j in tag_arr){
+						if(s_arr[i] === tag_arr[j]){
+							freq_arr[j]++;
+							if(freq_arr[j] > most_freq_count){
+								most_freq_count = freq_arr[j];
+							}
+							var new_rel = Math.floor((freq_arr[j]/most_freq_count)*15);
+							$('#tag'+j).attr('rel', new_rel);
+							contained = true;
+						}
+					}
+					if(!contained){
+						var new_rel = Math.floor((1/most_freq_count)*15);
+						$('#cloudDiv').append('<a class="tag" href="#" id="tag'+tag_index+'" rel="'+new_rel+'">'+s_arr[i]+'</a>');
+						tag_index += 1;
+						freq_arr.push(1);
+						tag_arr.push(s_arr[i]);
+					}
+				}
+				lineNum++;
+				$("#cloudDiv a").tagcloud({
+					size : {start : startSize, end : endSize, unit : 'pt'},
+					color : {start : startColor, end : endColor}
+				});
+
+			}
+		}, 1000);
+	}
+	
+	
 	var tags = [];
 	var row = -1;
 	var rowfill = 3;
 	$(document).ready(function() {
+		drawCloud('#AEA', '#AFA', 15, 30);
+	
 		$('a.tag').live('click', function() {
 			$.ajax({
 				url: 'http://api.duckduckgo.com/?q=' + encodeURIComponent($(this).html()) + '&format=json',
@@ -59,13 +110,7 @@
 			</div>
 		</div>
 		<div class="span7 cloud">
-			<div class="innerPadding">
-				<h3><a class="tag" href="#">Barack Obama</a><br /></h3>
-				<h3><a class="tag" href="#">John F. Kennedy</a><br /></h3>
-				<h3><a class="tag" href="#">George W. Bush</a><br /></h3>
-				<h3><a class="tag" href="#">Pat Robertson</a><br /></h3>
-				<h3><a class="tag" href="#">Jimmy Carter</a><br /></h3>
-				<h3><a class="tag" href="#">Lance Armstrong</a></h3>
+			<div class="innerPadding" id="cloudDiv">
 			</div>
 			<div style="position: absolute; bottom: 5px; width: 100%; font-size: small; text-align: center;">Click a tag for more information.</div>
 		</div>

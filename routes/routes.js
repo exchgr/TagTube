@@ -101,7 +101,7 @@ module.exports = {
 										var pollingInterval = setInterval(function(){
 											if(returned){
 												returned = false;
-												console.log("making an http request for "+lineIndex);
+												//console.log("making an http request for "+lineIndex);
 												http.request(pollReq, function(pollRes){
 													pollRes.setEncoding('utf8');
 													var pollStatus = '';
