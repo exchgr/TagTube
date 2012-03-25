@@ -13,7 +13,7 @@
 					if (rowfill == 3) {
 						row++;
 						rowfill = 0;
-						$('#body').append('<div class="row-fluid show-grid" id="' + row + '"></div>');
+						$('#body').append('<div class="row show-grid" id="' + row + '"></div>');
 					}
 					var infobox = '<div class="span4 infobox"><div class="innerPadding">';
 					if (data.Type == 'A') { // Article
@@ -33,16 +33,17 @@
 							}
 						}
 					} else if (data.Type == 'C') { // Category
-
+						infobox += '<a href="' + data.AbstractURL + '">'+ '<h2>' + data.Heading + '</h2></a>';
 					} else if (data.Type == 'N') { // Name
-
+						infobox += '<a href="' + data.AbstractURL + '">'+ '<h2>' + data.Heading + '</h2></a>';
+						var i;
 					} else if (data.Type == 'E') { // Exclusive
 
 					} else if (data.Type == '') { // Nothing
 
 					}
 					infobox +='</div></div>';
-					$('.row-fluid#' + row).append($(infobox).hide().fadeIn(500));
+					$('.row#' + row).append($(infobox).hide().fadeIn(500));
 					rowfill++;
 				}
 			});
@@ -66,7 +67,7 @@
 				<h3><a class="tag" href="#">Jimmy Carter</a><br /></h3>
 				<h3><a class="tag" href="#">Lance Armstrong</a></h3>
 			</div>
-			<div style="position: absolute; bottom: 5px; width: 100%; font-size: small; text-align: center; color: #222">Click a tag for more information.</div>
+			<div style="position: absolute; bottom: 5px; width: 100%; font-size: small; text-align: center;">Click a tag for more information.</div>
 		</div>
 	</div>
 </div>
