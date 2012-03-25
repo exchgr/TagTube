@@ -6,6 +6,7 @@
 		<title>TagTube</title>
 
 		<link rel="stylesheet/less" type="text/css" href="/include/bootstrap/less/bootstrap.less" />
+		<link rel="stylesheet/less" type="text/css" href="/include/bootstrap/less/responsive.less" />
 		<link rel="stylesheet/less" type="text/css" href="/style.less" />
 
 		<script type="text/javascript" src="/include/ejs/ejs_production.js"></script>
@@ -20,8 +21,15 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			
+		<div class="container" style="margin-top: 60px;">
+			<% var videoPath = 'g77LP8pK1eo' %>
+			<div class="row">
+				<div class="span4">
+					<div class="videoWrapper">
+						<object width="640" height="360"><param name="movie" value="http://www.youtube.com/v/<%= videoPath %>?version=3&feature=player_detailpage"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/<%= videoPath %>?version=3&feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360"></object>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
