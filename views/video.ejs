@@ -28,7 +28,9 @@
 						for (i in data.RelatedTopics) {
 							if (typeof(data.RelatedTopics[i].Result) !== 'undefined') {
 								infobox += '<p>' + data.RelatedTopics[i].Result + '</p>';
-							} else if (typeof(data.RelatedTopics[i].Topics) !== 'undefined')
+							} else if (typeof(data.RelatedTopics[i].Topics) !== 'undefined') {
+								infobox += '<p>' + data.RelatedTopics[i].Name + '</p>';
+							}
 						}
 					} else if (data.Type == 'C') { // Category
 
