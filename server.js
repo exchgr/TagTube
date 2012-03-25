@@ -17,8 +17,9 @@ app.configure(function(){
 });
 
 /* CRUD */
+app.get('/parseUrl', routes.parseUrl);
 app.get('/:videoPath', routes.videoView);
-app.get('/store', routes.store);
+//app.get('/store', routes.store);
 
 /* start 'er up */
 app.listen(port);
