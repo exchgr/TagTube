@@ -2,9 +2,27 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('form#videoForm').submit(function() {
-			$('.container#body').fadeOut(500, function() {
-				$(this).html('<div class="row"><div class="loading"><div class="innerPadding"><h2>&nbsp;</h2></div></div></div>');
-				$(this).fadeIn(500);
+			var url = $('input#videoURL').val();
+			console.log(url);
+			$.ajax({
+				url: '/parseVideoPath?url=' + url,
+				dataType: 'json',
+				success: function(data) {
+					console.log(data.videoPath);
+					$('.container#body').fadeOut(500, function() {
+						$(this).html('<div class="row"><div class="loading"><div class="innerPadding"><h2>&nbsp;</h2></div></div></div>');
+						$(this).fadeIn(500);
+					});
+					$.ajax({
+						url: '/getCaptions?videoPath=' + data.videoPath,
+						dataType: 'text',
+						success: function(datum) {
+							localStorage.captions = datum;
+							console.log(localStorage.captions);
+							window.location = '/' + data.videoPath;
+						}
+					})
+				}
 			});
 			return false;
 		});
