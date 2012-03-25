@@ -26,11 +26,13 @@ module.exports = {
 			var options = {
 				videoPath : req.params.videoPath
 			};
-			console.log(options);
 			res.render('video.ejs', options);
 		},
 	
-
+	indexView :
+		function(req, res) {
+			res.render('index.ejs', {});
+		},
 
 	/* get captions chugged through parsely */
 	/* this runs really fast when parsely doesn't hate me, otherwise its slow */
