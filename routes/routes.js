@@ -5,6 +5,6 @@ module.exports = {
 			var options = {
 				videoPath : req.params.videoPath
 			};
-			res.render(video.ejs, options);
+			res.render('video.ejs', options);
 		}
 };

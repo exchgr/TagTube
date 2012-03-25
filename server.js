@@ -9,11 +9,15 @@ var routes = require("./routes/routes.js");
 /* configs */
 app.configure(function(){
 	app.use(express.static(__dirname+"/public"));
+	app.set('views', __dirname+'/views');
+	app.set('view engine', 'ejs');
+	app.set('view options', {
+		layout : false
+	});
 });
-app.set('view engine', 'ejs');
 
 /* CRUD */
-app.get('/:videoId', routes.videoView);
+app.get('/:videoPath', routes.videoView);
 app.get('/store', routes.store);
 
 /* start 'er up */
