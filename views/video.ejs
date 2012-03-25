@@ -91,7 +91,8 @@
 					} else if (data.Type == 'E') { // Exclusive
 
 					} else if (data.Type == '') { // Nothing
-
+						infobox = 0;
+						return false;
 					}
 					infobox +='</div></div>';
 					$('.row#' + row).append($(infobox).hide().fadeIn(500));
