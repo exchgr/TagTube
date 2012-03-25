@@ -1,27 +1,61 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		
-		<title>TagTube</title>
-
-		<link rel="stylesheet/less" type="text/css" href="/include/bootstrap/less/bootstrap.less" />
-		<link rel="stylesheet/less" type="text/css" href="/style.less" />
-
-		<script type="text/javascript" src="/include/ejs/ejs_production.js"></script>
-		<script type="text/javascript" src="/include/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="/include/less-1.3.0.min.js"></script>
-	</head>
-	<body>
-		<div class="navbar navbar-fixed-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<h1>TagTube</h1>
-				</div>
+<%- partial('header.ejs') %>
+<script type="text/javascript">
+	var tags = [];
+	var row = -1;
+	var rowfill = 3;
+	$(document).ready(function() {
+		$('a.tag').live('click', function() {
+			$.ajax({
+				url: 'http://api.duckduckgo.com/?q=' + encodeURIComponent($(this).html()) + '&format=json',
+				dataType: 'jsonp',
+				success: function(data) {
+					tags.push(data);
+					if (rowfill == 3) {
+						row++;
+						rowfill = 0;
+						$('#body').append('<div class="row-fluid show-grid" id="' + row + '"></div>');
+					}
+					var infobox = '<div class="span4 infobox"><div class="innerPadding">';
+					if (data.Heading != '') {
+						infobox += '<h2>' + data.Heading + '</h2>';
+					}
+					if (data.Abstract != '') {
+						infobox +='<p>';
+						if (data.Image != '') {
+							infobox += '<img src="' + data.Image + '" style="float: right; margin: 5px 0px 10px 10px;" />';
+						}
+						infobox += data.Abstract + '</p>';
+					} else {
+						if (data.Image != '') {
+							infobox += '<img src="' + data.Image + '" /><p></p>';
+						}
+					}
+					infobox +='</div></div>';
+					$('.row-fluid#' + row).append($(infobox).hide().fadeIn(500));
+					rowfill++;
+				}
+			});
+			return false;
+		});
+	});
+</script>
+<div class="container" id="body">
+	<div class="row" style="position: relative;">
+		<div class="span5">
+			<div class="videoWrapper">
+				<object width="640" height="360"><param name="movie" value="http://www.youtube.com/v/<%= videoPath %>?version=3&feature=player_detailpage"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="wmode" value="opaque" /><embed src="http://www.youtube.com/v/<%= videoPath %>?version=3&feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360" wmode="opaque"></object>
 			</div>
 		</div>
-		<div class="container">
-			
+		<div class="span7 cloud">
+			<div class="innerPadding">
+				<h3><a class="tag" href="#">Barack Obama</a><br /></h3>
+				<h3><a class="tag" href="#">John F. Kennedy</a><br /></h3>
+				<h3><a class="tag" href="#">George W. Bush</a><br /></h3>
+				<h3><a class="tag" href="#">Pat Robertson</a><br /></h3>
+				<h3><a class="tag" href="#">Jimmy Carter</a><br /></h3>
+				<h3><a class="tag" href="#">Lance Armstrong</a></h3>
+			</div>
 		</div>
-	</body>
-</html>
+	</div>
+</div>
+<%- partial('footer.ejs') %>

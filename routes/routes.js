@@ -1,9 +1,11 @@
 /* requires */
+<<<<<<< HEAD
 var Url = require('url');
 var http = require('http');
 var xml2js = require('xml2js');
 var ent = require('ent');
 var querystring = require('querystring');
+var app = require('express');
 
 /* parser */
 var parser = new xml2js.Parser();
