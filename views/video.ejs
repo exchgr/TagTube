@@ -15,7 +15,7 @@
 		var most_freq_count = 1;
 		var timer = setInterval(function(){
 			seconds += 1;
-			if(Math.floor(parseFloat(captions.text[lineNum]['@']['start'])) <= seconds){
+			if(Math.ceil(parseFloat(captions.text[lineNum]['@']['start'])) <= seconds){
 				s = captions.text[lineNum]['#'];
 				s_arr = s.split(' ');
 				for(var i in s_arr){
