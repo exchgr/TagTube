@@ -1,5 +1,6 @@
 /* requires */
 Url = require('url');
+app = require('express');
 
 /* export request handlers */
 module.exports = {
