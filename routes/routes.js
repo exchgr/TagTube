@@ -95,6 +95,7 @@ module.exports = {
 										waitUrl += d;
 									});
 									parseWaitRes.on('end', function() {
+										console.log(waitUrl);
 										waitUrl = eval('('+waitUrl+')');
 										
 										var pollReq = {
